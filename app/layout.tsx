@@ -6,6 +6,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 		<html>
 			<head />
 			<body>
+				{/* @ts-ignore: Unreachable code error*/}
 				<Header />
 				{children}
 			</body>
