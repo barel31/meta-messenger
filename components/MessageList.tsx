@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 import useSWR from 'swr';
 import fetcher from '../utils/fetchMessages';
 import { Message } from '../typings';
-import MessageComponent from '../components/MessageComponent';
+import MessageComponent from './MessageComponent';
 import { clientPusher } from '../pusher';
 
 type Props = {

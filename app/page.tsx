@@ -1,5 +1,5 @@
-import MessageList from './MessageList';
-import ChatInput from './ChatInput';
+import MessageList from '../components/MessageList';
+import ChatInput from '../components/ChatInput';
 import { Message } from '../typings';
 import { unstable_getServerSession } from 'next-auth';
 import { Providers } from './providers';
