@@ -18,11 +18,11 @@ export default function MessageComponent({ message }: Props) {
 		<div className={`flex w-fit ${isUser && 'ml-auto'}`}>
 			<div className={`flex-shrink-0  ${isUser && 'order-2'}`}>
 				<Image
-					className="rounded-full mx-2"
+					className="rounded-full mx-2 w-auto"
 					height={10}
 					width={50}
 					src={message.profilePic}
-					alt="Profile Pi-*/-cture"
+					alt="Profile Picture"
 				/>
 			</div>
 

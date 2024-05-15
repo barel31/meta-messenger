@@ -11,7 +11,7 @@ export default async function Header() {
 			<header className="sticky top-0 z-50 bg-white flex justify-between items-center p-10 shadow-sm">
 				<div className="flex space-x-2">
 					<Image
-						className="rounded-full mx-2 object-contain"
+						className="rounded-full mx-2 object-contain w-auto"
 						height={10}
 						width={50}
 						src={session.user?.image!}
@@ -19,7 +19,9 @@ export default async function Header() {
 					/>
 					<div>
 						<p className="text-blue-400">Logged in as:</p>
-						<p className="font-bold text-lg">{session.user?.name}</p>
+						<p className="font-bold text-lg">
+							{session.user?.name}
+						</p>
 					</div>
 				</div>
 
@@ -31,7 +33,13 @@ export default async function Header() {
 		<header className="sticky top-0 z-50 bg-white flex justify-center items-center p-10 shadow-sm">
 			<div className="flex flex-col items-center space-y-5">
 				<div className="flex space-x-2 items-center">
-					<Image src="/assets/logo.png" alt="Logo" height={10} width={50} />
+					<Image
+						src="/assets/logo.png"
+						alt="Logo"
+						height={10}
+						width={50}
+						className="w-auto"
+					/>
 
 					<p className="text-blue-400">Welcome to Meta Messenger</p>
 				</div>

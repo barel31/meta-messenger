@@ -2,17 +2,18 @@ import { getProviders } from 'next-auth/react';
 import Image from 'next/image';
 import SignInComponent from '../../../components/SignInComponent';
 
-export default async function SignInPage() {
+async function SignInPage() {
 	const providers = await getProviders();
 
 	return (
 		<div className="grid justify-center">
 			<div>
 				<Image
-					className="rounded-full mx-2 object-cover"
-					width={700}
-					height={700}
-					src="assets/logo.png"
+					className="rounded-full mx-2 object-cover w-auto m-8"
+					width={300}
+					height={300}
+					priority
+					src="/assets/logo.png"
 					alt="Profile Picture"
 				/>
 			</div>
@@ -21,3 +22,5 @@ export default async function SignInPage() {
 		</div>
 	);
 }
+
+export default SignInPage;
